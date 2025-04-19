@@ -19,6 +19,7 @@
 						
 				2. Validate the code
 						set 3 executable paths Maven ,GIT,JDK  (Dashboard -> Manage Jenkins -> Tools)
+						get the code
+				3.  Compile the code
 						
-				3.		
 				
