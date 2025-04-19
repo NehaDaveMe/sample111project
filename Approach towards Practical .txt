@@ -1,5 +1,5 @@
 1.		Create Jenkin's server (ec2 t2.micro) and install Jenkins on it. Connect to that server (don't forget to change ip in manage jenkins->system>jenkin url)
-2.	Insatll Plugins
+2.	Install Plugins
 				
 				First time user go Dashboard->ManageJEnkins->Plugins
 																													install required plugins to configure many 3rd party tools like(maven,git,sonar etc) in Jenkins->Tool 
