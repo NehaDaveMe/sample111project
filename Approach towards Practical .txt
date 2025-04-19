@@ -23,4 +23,5 @@
 				3.  Compile the code
 						Compile = validate+compile
 				4.  Unit test framework implementation
+				5. Create package
 				
