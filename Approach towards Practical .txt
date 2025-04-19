@@ -12,16 +12,21 @@
 4.	Start writing Jenkinsfile
 				
 				CI part
+				
 				1. SCM checkout
 						take pipeline syntax from google
 						part inside steps changes as per requirement so everytime generate it from snippett generator in Jenkins 
-						e.x. here git
-						
+						e.x. here git		
 				2. Validate the code
 						set 3 executable paths Maven ,GIT,JDK  (Dashboard -> Manage Jenkins -> Tools)
 						get the code
-				3.  Compile the code
+				3. Compile the code
 						Compile = validate+compile
-				4.  Unit test framework implementation
+				4. Unit test framework implementation
 				5. Create package
+					check  .war(package) file should be available
+					
+				CD part	
 				
+				1. create Deployment server and install TOmcat(.war package needs something to run on it,this is engine without this deployment server is nothing)
+				on it
