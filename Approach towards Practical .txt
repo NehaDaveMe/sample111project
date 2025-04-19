@@ -6,3 +6,9 @@
 3.	Create Pipeline	Job
 4.	Start writing Jenkinsfile
 				
+				CI part
+				1. SCM checkout
+						take pipeline syntax from google
+						part inside steps changes as per requirement so everytime generate it from snippett generator in Jenkins 
+						e.x. here i will do for git
+				
