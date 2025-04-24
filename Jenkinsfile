@@ -40,7 +40,7 @@ pipeline {
     stage('push docker image to dockerhub') {
       steps {
         
-        withDockerRegistry(credentialsId: 'Dockerhub_cred', url: 'https://hub.docker.com/repositories/nehadocker23') {
+        withDockerRegistry(credentialsId: 'Dockerhub_cred', url: 'https://index.docker.io/v1/') {
         sh 'docker push nehadocker23/gitjenkindocker:latest'
 }
         
