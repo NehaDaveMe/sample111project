@@ -2,7 +2,10 @@ Jenkins Docker Integration
 
 1. Convert Jenkins server to t2.medium
 2. Install docker
-3. Docker and aws ECR plugin inside Jenkins
-4. Modify Jenkins file 
-		add docker related things
+	Connect Jenkins server via putty and install
+3. Install Docker and aws ECR plugin 
+4. Give docker hub credentials inside Jenkins (just like sonar)
 5. Create Docker file
+6. Modify Jenkins file 
+		add docker related things
+ 
