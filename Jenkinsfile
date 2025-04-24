@@ -32,7 +32,7 @@ pipeline {
         }
       }
     }
-    stage('create docker image') {
+    stage('create docker image ') {
       steps {
         sh 'docker build -t nehadocker23/gitjenkindocker:latest .'
       }
