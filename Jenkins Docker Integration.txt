@@ -1,0 +1,8 @@
+Jenkins Docker Integration
+
+1. Convert Jenkins server to t2.medium
+2. Install docker
+3. Docker and aws ECR plugin inside Jenkins
+4. Modify Jenkins file 
+		add docker related things
+5. Create Docker file
