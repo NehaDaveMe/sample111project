@@ -41,7 +41,7 @@ pipeline {
       steps {
         
         withDockerRegistry(credentialsId: 'Dockerhub_cred', url: 'https://index.docker.io/v1/') {
-        sh 'docker push nehadocker23/gitjenkindocker:latest12nd'
+        sh 'docker push nehadocker23/gitjenkindocker:latest1'
 }
         
       }
