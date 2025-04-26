@@ -46,5 +46,47 @@ pipeline {
         
 //       }
 //     }
+
+stage('Login to AWS ECR') {
+            steps {
+                script {
+                    // Authenticate Docker to AWS ECR
+                    sh """
+                        aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 730335269916.dkr.ecr.ap-south-1.amazonaws.com
+                    """
+                }
+            }
+        }
+stage('Build Docker Image') {
+            steps {
+                script {
+                    // Build the Docker image
+                    sh 'docker build -t awsecr .'
+                }
+            }
+        }
+
+        stage('Tag Docker Image for ECR') {
+            steps {
+                script {
+                    // Tag the Docker image for AWS ECR
+                    sh """
+                        docker tag awsecr:latest 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:latest
+                    """
+                }
+            }
+        }
+
+        stage('Push Docker Image to ECR') {
+            steps {
+                script {
+                    // Push the Docker image to ECR
+                    sh """
+                        docker push 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:latest
+                    """
+                }
+            }
+        }
+    }
   }
-}
+
