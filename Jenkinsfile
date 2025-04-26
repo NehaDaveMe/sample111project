@@ -71,7 +71,7 @@ stage('Build Docker Image') {
                 script {
                     // Tag the Docker image for AWS ECR
                     sh """
-                        docker tag awsecr:latest 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:fromecr
+                        docker tag awsecr:latest 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:fromecr1
                     """
                 }
             }
@@ -82,7 +82,7 @@ stage('Build Docker Image') {
                 script {
                     // Push the Docker image to ECR
                     sh """
-                        docker push 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:fromecr
+                        docker push 730335269916.dkr.ecr.ap-south-1.amazonaws.com/awsecr:fromecr1
                     """
                 }
             }
