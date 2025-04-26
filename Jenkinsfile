@@ -34,14 +34,14 @@ pipeline {
     }
     stage('create docker image ') {
       steps {
-        sh 'docker build -t nehadocker23/gitjenkindocker:latest .'
+        sh 'docker build -t nehadocker23/gitjenkindocker:latest1 .'
       }
     }
     stage('push docker image to dockerhub ') {
       steps {
         
         withDockerRegistry(credentialsId: 'Dockerhub_cred', url: 'https://index.docker.io/v1/') {
-        sh 'docker push nehadocker23/gitjenkindocker:latest'
+        sh 'docker push nehadocker23/gitjenkindocker:latest12nd'
 }
         
       }
