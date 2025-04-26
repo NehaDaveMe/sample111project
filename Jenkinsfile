@@ -77,7 +77,7 @@ stage('Build Docker Image') {
             }
         }
 
-        stage('Push Docker Image to ECR') {
+        stage('Push Docker Image to ECR ') {
             steps {
                 script {
                     // Push the Docker image to ECR
