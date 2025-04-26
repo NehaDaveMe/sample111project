@@ -7,5 +7,28 @@ Jenkins Docker Integration
 4. Give docker hub credentials inside Jenkins (just like sonar)
 5. Create Docker file
 6. Modify Jenkins file 
-		add docker related things
- 
+		add docker related 2 things
+																create docker image
+																push docker image to registry
+ 7. Run the pipeline, image should be seen on Docker Hub
+ 8. Anyone can pull the image modify it or use it
+				create container from the image deployed
+				expose the port 
+9. check url http://localhost:<port openend during container creation>/webapp/
+
+
+
+you can also push images to AWS ECR
+1. Create IAM user 
+					attach 2 policies AWSAppRunnerServicePolicyForECRAccess
+													 EC2InstanceProfileForImageBuilderECRContainerBuilds
+2. Go to ECR -> create Repo
+					select macos/linux option
+					once repo is created click on view push commands
+3. Go to git Bash
+					aws configure
+					provide access and secret access key for IAM user Geeta
+4. Once logged in, provide 4 commands given in aws ecr Push commands
+5. under Repo you should see your image
+					
+					
