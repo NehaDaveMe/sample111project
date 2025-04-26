@@ -57,7 +57,7 @@ stage('Login to AWS ECR') {
                 }
             }
         }
-stage('Build Docker Image') {
+stage('Build Docker Image ') {
             steps {
                 script {
                     // Build the Docker image
